@@ -1,0 +1,16 @@
+Location = ("Baitul Aqsa", "Antartica", "Makkah", "Chongqing", "New York")
+print(Location)
+Location = sorted(Location)
+print(Location)
+Location = sorted(Location, reverse=True)
+print(Location)
+Location.reverse()
+print(Location)
+Location.reverse()
+print(Location)
+Location.sort()
+print(Location)
+Location.sort(reverse=True)
+print(Location)
+
+
