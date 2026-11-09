@@ -1,0 +1,28 @@
+class User:
+    """Representasi profil pengguna."""
+
+    def __init__(self, first_name, last_name, username, email, location):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.username = username
+        self.email = email
+        self.location = location
+
+    def describe_user(self):
+        print(f"Name: {self.first_name.title()} {self.last_name.title()}")
+        print(f"Username: {self.username}")
+        print(f"Email: {self.email}")
+        print(f"Location: {self.location.title()}")
+
+    def greet_user(self):
+        print(f"Hello, {self.first_name.title()}! Welcome back.")
+
+
+user_1 = User("budi", "santoso", "budis", "budi@example.com", "surakarta")
+user_2 = User("ani", "wijaya", "aniw", "ani@example.com", "bandung")
+user_3 = User("citra", "lestari", "citral", "citra@example.com", "jakarta")
+
+for user in (user_1, user_2, user_3):
+    user.describe_user()
+    user.greet_user()
+    print()
